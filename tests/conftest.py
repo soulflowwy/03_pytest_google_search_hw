@@ -2,7 +2,7 @@ import pytest
 from selene import browser
 
 @pytest.fixture
-def browser():
+def browser_set_up():
     browser.config.base_url = "https://google.com"
     browser.config.window_width = 1920
     browser.config.window_height = 1080
